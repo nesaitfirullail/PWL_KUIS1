@@ -8,20 +8,20 @@ class HalloController extends Controller
 {
     public function index()
     {
-        return view('minggu3.home');
+        return view('kuis.home');
     }
-    public function product()
+    public function pegawai()
     {
-        return view('minggu3.product');
+        return view('kuis.pegawai');
     }
     
     public function promotion()
     {
-        return view('minggu3.promotion');
+        return view('kuis.promotion');
     }
     public function contactus()
     {
-        return view('minggu3.contact-us');
+        return view('kuis.contact-us');
     }
     
 }

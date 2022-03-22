@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HalloController;
+use App\Http\Controllers\PegawaiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +17,7 @@ use App\Http\Controllers\HalloController;
 
 Route::get('/home', [HalloController::class, 'index']);
 
-Route::get('/product', [HalloController::class, 'product']);
+Route::get('/pegawai', [PegawaiController::class, 'index']);
 
 Route::get('/promotion', [HalloController::class,'promotion']);
 

@@ -13,7 +13,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="{{asset('home')}}">Home</a></li>
                         <li><a href="{{asset('promotion')}}">Promotion</a></li>
-                        <li><a href="{{asset('product')}}">Products</a></li>
+                        <li><a href="{{asset('pegawai')}}">Pegawai</a></li>
                         <li><a href="{{asset('contact-us')}}">Contact</a></li>
                     </ul>
                 </div>
