@@ -14,7 +14,7 @@
                         <li><a href="{{asset('home')}}">Home</a></li>
                         <li><a href="{{asset('promotion')}}">Promotion</a></li>
                         <li><a href="{{asset('pegawai')}}">Pegawai</a></li>
-                        <li><a href="{{asset('contact-us')}}">Contact</a></li>
+                        <li><a href="{{asset('supplier')}}">Supplier</a></li>
                     </ul>
                 </div>
             </nav>         

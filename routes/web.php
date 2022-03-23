@@ -1,11 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\BarangController;
-use App\Http\Controllers\HalloController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\SupplierController;
 
 
 /*
@@ -20,15 +19,15 @@ use App\Http\Controllers\PegawaiController;
 */
 
 
-Route::get('/pelanggan', [PelangganController::class, 'index']);
 
 Route::get('/barang', [BarangController::class, 'index']);
 
-Route::get('/home', [HalloController::class, 'index']);
+
+Route::get('/pelanggan', [PelangganController::class, 'index']);
+
 
 Route::get('/pegawai', [PegawaiController::class, 'index']);
 
-Route::get('/promotion', [HalloController::class,'promotion']);
 
-Route::get('/contact-us', [HalloController::class,'contactus']);
+Route::get('/supplier', [SupplierController::class, 'index']);
 
