@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@include('layouts.header')
+@include('header')
 
 <div class="page-h">
         <div class="container">
@@ -41,4 +41,4 @@
     </div>
     
       
-    @include('layouts.footer')
+    @include('footer')
