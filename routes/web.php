@@ -1,12 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-<<<<<<< HEAD
+
 use App\Http\Controllers\PelangganController;
-=======
+use App\Http\Controllers\BarangController;
 use App\Http\Controllers\HalloController;
 use App\Http\Controllers\PegawaiController;
->>>>>>> 8853ab262275e15391f918132182aae3b7562e7a
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,10 +19,11 @@ use App\Http\Controllers\PegawaiController;
 |
 */
 
-<<<<<<< HEAD
+
 Route::get('/pelanggan', [PelangganController::class, 'index']);
 
-=======
+Route::get('/barang', [BarangController::class, 'index']);
+
 Route::get('/home', [HalloController::class, 'index']);
 
 Route::get('/pegawai', [PegawaiController::class, 'index']);
@@ -30,4 +31,4 @@ Route::get('/pegawai', [PegawaiController::class, 'index']);
 Route::get('/promotion', [HalloController::class,'promotion']);
 
 Route::get('/contact-us', [HalloController::class,'contactus']);
->>>>>>> 8853ab262275e15391f918132182aae3b7562e7a
+

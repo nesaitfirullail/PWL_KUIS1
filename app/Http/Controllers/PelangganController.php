@@ -10,6 +10,6 @@ class PelangganController extends Controller
     public function index()
     {
         $data = Pelanggan::all();
-        return view('pelanggan', ['pelanggan' => $data]);
+        return view('kuis.pelanggan', ['pelanggan' => $data]);
     }
 }

@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>Daftar Pegawai | KUIS PWL 1</title>
+    <title>Daftar Pelanggan | KUIS PWL 1</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- 
@@ -34,54 +34,52 @@
 
     <!-- HEADER -->
     @include('header')
-     <!-- .site-header -->
-
-
     <div class="page-h">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h3>Daftar Pegawai</h3>
+                    <h3>Daftar Pelanggan</h3>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div>
-        <table class="table table-pegawai">
+    </div>    
+     <!-- .site-header -->
+        <table class="table table-gambar">
             <thead>
                 <tr>
-                    <th>ID Pegawai</th>
+                    <th>ID Pelanggan</th>
                     <th>Nama</th>
-                    <th>Nomor Telepon</th>
                     <th>Alamat</th>
+                    <th>Nomor Telepon</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($peg as $p)
+                @foreach ($pelanggan as $p)
                     <tr>
-                        <td>{{$p ->id_pegawai}}</td>
+                        <td>{{$p ->id_pelanggan}}</td>
                         <td>{{$p ->nama}}</td>
-                        <td>{{$p ->nomor_telepon}}</td>
                         <td>{{$p ->alamat}}</td>
+                        <td>{{$p ->nomor_telepon}}</td>
                     </tr>
                 @endforeach
             </tbody>
         </table>
-    </div>
-
-    <div class="row">
-        .
-    </div>
 
     
 
-    @include('footer')
+
 
     <script src="{{asset('js/vendor/jquery-1.10.1.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
     <script src="{{asset('js/plugins.js')}}"></script>
     <script src="{{asset('js/main.js')}}"></script>    
+
+    <div class="col-md">
+        <div class="page">
+            tes
+        </div>
+    </div>
+    @include('footer')
     
 </body>
 </html>

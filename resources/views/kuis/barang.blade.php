@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>Daftar Pelanggan | KUIS PWL 1</title>
+    <title>Daftar Barang | KUIS PWL 1</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- 
@@ -34,23 +34,32 @@
 
     <!-- HEADER -->
     @include('header')
+    <div class="page-h">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3>Daftar Barang</h3>
+                </div>
+            </div>
+        </div>
+    </div>    
      <!-- .site-header -->
         <table class="table table-gambar">
             <thead>
                 <tr>
-                    <th>ID Pelanggan</th>
-                    <th>Nama</th>
-                    <th>Alamat</th>
-                    <th>Nomor Telepon</th>
+                    <th>ID Barang</th>
+                    <th>Nama Barang</th>
+                    <th>Stok Barang</th>
+                    <th>Harga</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($pelanggan as $p)
+                @foreach ($barang as $b)
                     <tr>
-                        <td>{{$p ->id_pelanggan}}</td>
-                        <td>{{$p ->nama}}</td>
-                        <td>{{$p ->alamat}}</td>
-                        <td>{{$p ->nomor_telepon}}</td>
+                        <td>{{$b ->id_barang}}</td>
+                        <td>{{$b ->nama_barang}}</td>
+                        <td>{{$b ->harga}}</td>
+                        <td>{{$b ->stok}}</td>
                     </tr>
                 @endforeach
             </tbody>
