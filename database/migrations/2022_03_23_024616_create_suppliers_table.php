@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePegawaisTable extends Migration
+class CreateSuppliersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class CreatePegawaisTable extends Migration
      */
     public function up()
     {
-        Schema::create('pegawai', function (Blueprint $table) {
-            $table->id('id_pegawai');
+        Schema::create('supplier', function (Blueprint $table) {
+            $table->id('id_supplier');
             $table->string('nama');
             $table->string('nomor_telepon');
             $table->string('alamat', 255);
@@ -28,6 +28,6 @@ class CreatePegawaisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pegawai');
+        Schema::dropIfExists('supplier');
     }
 }

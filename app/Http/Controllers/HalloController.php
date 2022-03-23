@@ -19,9 +19,9 @@ class HalloController extends Controller
     {
         return view('kuis.promotion');
     }
-    public function contactus()
+    public function supplier()
     {
-        return view('kuis.contact-us');
+        return view('kuis.supplier');
     }
     
 }

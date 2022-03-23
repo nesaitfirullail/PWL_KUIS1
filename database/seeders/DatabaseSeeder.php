@@ -13,10 +13,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-<<<<<<< HEAD
+
         $this->call(PelangganSeeder::class);
-=======
+// =======
         $this->call(PegawaiSeeder::class);
->>>>>>> 8853ab262275e15391f918132182aae3b7562e7a
+        $this->call(SupplierSeeder::class);
+// >>>>>>> 8853ab262275e15391f918132182aae3b7562e7a
     }
 }
